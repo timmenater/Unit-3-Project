@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>The Code Review</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>The Code Review</header>
+    <div class="intro">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+    <!-- Beginning of form -->
+    <main>
+        <form action="">
+            <!-- Contact Information section -->
+            <div class="contact-fieldset">
+            <fieldset class="contact_info">
+                <legend id="contact_header">Contact Information</legend>
+                <div class="desktop-contact">
+                    <label class="contact-label" for="name">Full Name</label><br>
+                    <input class="contact-input" type="text" id="name" name="name" placeholder="Required" required><br>
+                    <label class="contact-label" for="email">Email Address</label><br>
+                    <input class="contact-input" type="email" id="email" name="email" placeholder="Required" required><br>
+                    <label class="contact-label" for="phone">Phone Number</label><br>
+                    <input class="contact-input" type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
+                    <label class="contact-label" for="street_address">Street Address</label><br>
+                    <input class="contact-input" type="text" id="street_address" name="address" placeholder="123 Main Street"><br>
+                    <label class="contact-label" for="city">City</label><br>
+                    <input class="contact-input" type="text" id="city" name="city" placeholder="San Diego"><br>
+                    <label class="contact-label" for="state">State</label><br>
+                    <select class="contact-input" name="state" id="state" name="state">
+                        <optgroup>
+                            <option value="" disabled selected hidden>Choose State</option>
+                            <option value="CA">California</option>
+                            <option value="WA">Washington</option>
+                            <option value="TX">Texas</option>
+                            <option value="NY">New York</option>
+                            <option value="FL">Florida</option>
+                        </optgroup>
+                    </select><br>
+                    <div class="zip">
+                        <label class="contact-label" for="zip">Zip Code</label><br>
+                        <input class="contact-input contact-zip" type="number" id="zip" name="zip" placeholder="92111">
+                    </div>
+                </div>
+            </fieldset>
+            </div>
+            <!-- Newsletter section -->
+            <fieldset class="newsletter_info">
+                <legend class="newsletter">Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+                    <input class="checkbox1" type="checkbox">
+                    <label for="">HTML News</label><br>
+                    <input class="checkbox2" type="checkbox">
+                    <label for="">CSS News</label><br>
+                    <input class="checkbox3" type="checkbox">
+                    <label for="">Javascript News</label>
+                <p>Newsletter format</p>
+                    <input class="radio1" type="radio">
+                    <label for="html">HTML</label><br>
+                    <input class="radio2" type="radio">
+                    <label for="plain_text">Plain text</label>
+                <p>Other topics you'd like to hear about</p>
+                <div class="textarea">
+                    <textarea name="textbox" id="textbox" cols="" rows="5"></textarea><br>
+                </div>
+                    <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span>Copyright The Code Review</span>
+    </footer>
+</body>
+</html>

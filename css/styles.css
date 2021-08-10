@@ -1,0 +1,187 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgb(91, 86, 125);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.3em;
+}
+
+.intro {
+    text-align: center;
+    font-size: .9em;
+    margin: 0 10px;
+    padding: 5px 10px 15px 10px;
+    border-bottom: 4px solid black;
+}
+
+form {
+    margin: 2px 10px 0;
+    border-top: 2px solid black;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 20px;
+}
+
+.contact_info {
+    padding: 0;
+    border-bottom: 2px solid black;
+}
+
+fieldset.contact_info {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#contact_header {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.contact-input {
+    width: 99%;
+    padding: 15px 0;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+::placeholder {
+    padding-right: 20px;
+    font-size: .75em;
+    text-align: right;
+    font-style: italic;
+}
+
+.contact-input:focus {
+    border-color: rgb(109, 33, 230);
+}
+
+select {
+    color: gray;
+}
+
+.contact-zip {
+    width: 50%;
+    padding: 15px 0;
+    margin: 10px 0 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+fieldset.newsletter_info {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.checkbox1 {
+    margin: 0 10px 0 3px;
+}
+
+.checkbox2 {
+    margin: 15px 10px 15px 3px;
+}
+
+.checkbox3 {
+    margin: 0 10px 15px 3px;
+}
+
+.radio1 {
+    margin: 0 10px 0 3px;
+}
+
+.radio2 {
+    margin: 15px 10px 15px 3px;
+}
+
+.textarea {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+textarea#textbox {
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    background-color: rgb(61, 203, 200);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+    .intro {
+        width: 60%;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    form {
+        max-width: 60%;
+        margin: 2px auto 0;
+    }
+
+    div.desktop-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-label {
+        width: 30%;
+        padding-top: 25px;
+    }
+
+    .contact-input {
+        width: 70%;
+    }
+
+    .zip {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .zip.contact-label {
+        width: 30%;
+    }
+
+    .contact-zip {
+        width: 25%;
+    }
+}
