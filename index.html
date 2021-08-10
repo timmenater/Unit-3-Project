@@ -27,17 +27,17 @@
             <fieldset class="contact_info">
                 <legend id="contact_header">Contact Information</legend>
                 <div class="desktop-contact">
-                    <label class="contact-label" for="name">Full Name</label><br>
+                    <label class="contact-label" for="name" id="name">Full Name</label><br>
                     <input class="contact-input" type="text" id="name" name="name" placeholder="Required" required><br>
-                    <label class="contact-label" for="email">Email Address</label><br>
+                    <label class="contact-label" for="email" id="email">Email Address</label><br>
                     <input class="contact-input" type="email" id="email" name="email" placeholder="Required" required><br>
-                    <label class="contact-label" for="phone">Phone Number</label><br>
+                    <label class="contact-label" for="phone" id="phone">Phone Number</label><br>
                     <input class="contact-input" type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
-                    <label class="contact-label" for="street_address">Street Address</label><br>
+                    <label class="contact-label" for="street_address" id="street_address">Street Address</label><br>
                     <input class="contact-input" type="text" id="street_address" name="address" placeholder="123 Main Street"><br>
-                    <label class="contact-label" for="city">City</label><br>
+                    <label class="contact-label" for="city" id="city">City</label><br>
                     <input class="contact-input" type="text" id="city" name="city" placeholder="San Diego"><br>
-                    <label class="contact-label" for="state">State</label><br>
+                    <label class="contact-label" for="state" id="state">State</label><br>
                     <select class="contact-input" name="state" id="state" name="state">
                         <optgroup>
                             <option value="" disabled selected hidden>Choose State</option>
@@ -48,10 +48,8 @@
                             <option value="FL">Florida</option>
                         </optgroup>
                     </select><br>
-                    <div class="zip">
-                        <label class="contact-label" for="zip">Zip Code</label><br>
-                        <input class="contact-input contact-zip" type="number" id="zip" name="zip" placeholder="92111">
-                    </div>
+                    <label class="contact-label" for="zip" id="zip">Zip Code</label><br>
+                    <input class="contact-input contact-zip" type="number" id="zip" name="zip" placeholder="92111">
                 </div>
             </fieldset>
             </div>

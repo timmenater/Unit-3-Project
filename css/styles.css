@@ -172,16 +172,8 @@ footer {
         width: 70%;
     }
 
-    .zip {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .zip.contact-label {
-        width: 30%;
-    }
-
     .contact-zip {
         width: 25%;
+        margin-right: 45%;
     }
 }
