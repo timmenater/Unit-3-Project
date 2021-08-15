@@ -32,6 +32,11 @@ fieldset {
     margin-top: 20px;
 }
 
+input:focus {
+    background-color: rgb(223, 229, 243);
+    transition: .4s;
+}
+
 .contact_info {
     padding: 0;
     border-bottom: 2px solid black;

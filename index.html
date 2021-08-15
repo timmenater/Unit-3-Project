@@ -21,34 +21,79 @@
 
     <!-- Beginning of form -->
     <main>
-        <form action="">
+        <form action="post">
             <!-- Contact Information section -->
             <div class="contact-fieldset">
             <fieldset class="contact_info">
                 <legend id="contact_header">Contact Information</legend>
                 <div class="desktop-contact">
-                    <label class="contact-label" for="name" id="name">Full Name</label><br>
+                    <label class="contact-label" for="name">Full Name</label><br>
                     <input class="contact-input" type="text" id="name" name="name" placeholder="Required" required><br>
-                    <label class="contact-label" for="email" id="email">Email Address</label><br>
+                    <label class="contact-label" for="email">Email Address</label><br>
                     <input class="contact-input" type="email" id="email" name="email" placeholder="Required" required><br>
-                    <label class="contact-label" for="phone" id="phone">Phone Number</label><br>
+                    <label class="contact-label" for="phone">Phone Number</label><br>
                     <input class="contact-input" type="tel" id="phone" name="phone" placeholder="123-456-7890"><br>
-                    <label class="contact-label" for="street_address" id="street_address">Street Address</label><br>
+                    <label class="contact-label" for="street_address">Street Address</label><br>
                     <input class="contact-input" type="text" id="street_address" name="address" placeholder="123 Main Street"><br>
-                    <label class="contact-label" for="city" id="city">City</label><br>
+                    <label class="contact-label" for="city">City</label><br>
                     <input class="contact-input" type="text" id="city" name="city" placeholder="San Diego"><br>
-                    <label class="contact-label" for="state" id="state">State</label><br>
-                    <select class="contact-input" name="state" id="state" name="state">
-                        <optgroup>
-                            <option value="" disabled selected hidden>Choose State</option>
-                            <option value="CA">California</option>
-                            <option value="WA">Washington</option>
-                            <option value="TX">Texas</option>
-                            <option value="NY">New York</option>
-                            <option value="FL">Florida</option>
-                        </optgroup>
+                    <label class="contact-label" for="state">State</label><br>
+                    <!-- State option list taken from https://www.freeformatter.com/usa-state-list-html-select.html -->
+                    <select class="contact-input" id="state" name="state">
+                        <option value="" disabled selected hidden>Choose State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
                     </select><br>
-                    <label class="contact-label" for="zip" id="zip">Zip Code</label><br>
+                    <label class="contact-label" for="zip">Zip Code</label><br>
                     <input class="contact-input contact-zip" type="number" id="zip" name="zip" placeholder="92111">
                 </div>
             </fieldset>
@@ -57,20 +102,20 @@
             <fieldset class="newsletter_info">
                 <legend class="newsletter">Newsletter</legend>
                 <p>Select the newsletters you would like to receive</p>
-                    <input class="checkbox1" type="checkbox">
-                    <label for="">HTML News</label><br>
-                    <input class="checkbox2" type="checkbox">
-                    <label for="">CSS News</label><br>
-                    <input class="checkbox3" type="checkbox">
-                    <label for="">Javascript News</label>
+                    <input class="checkbox1" type="checkbox" id="html">
+                    <label for="html">HTML News</label><br>
+                    <input class="checkbox2" type="checkbox" id="css">
+                    <label for="css">CSS News</label><br>
+                    <input class="checkbox3" type="checkbox" id="javascript">
+                    <label for="javascript">Javascript News</label>
                 <p>Newsletter format</p>
-                    <input class="radio1" type="radio">
+                    <input class="radio1" type="radio" id="html-newsletter">
                     <label for="html">HTML</label><br>
-                    <input class="radio2" type="radio">
+                    <input class="radio2" type="radio" id="plain_text">
                     <label for="plain_text">Plain text</label>
                 <p>Other topics you'd like to hear about</p>
                 <div class="textarea">
-                    <textarea name="textbox" id="textbox" cols="" rows="5"></textarea><br>
+                    <textarea name="textbox" id="textbox" rows="5"></textarea><br>
                 </div>
                     <button type="submit">Sign Up</button>
             </fieldset>
