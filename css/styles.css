@@ -37,6 +37,14 @@ input:focus {
     transition: .4s;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .contact_info {
     padding: 0;
     border-bottom: 2px solid black;
@@ -54,6 +62,14 @@ fieldset.contact_info {
 }
 
 .contact-input {
+    width: 99%;
+    padding: 15px 0;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.zip-input {
     width: 99%;
     padding: 15px 0;
     margin: 10px 0 20px;
@@ -94,6 +110,10 @@ fieldset.newsletter_info {
     padding-right: 0;
 }
 
+.newsletter-label {
+    padding-top: 10px;
+}
+
 .checkbox1 {
     margin: 0 10px 0 3px;
 }
@@ -122,10 +142,23 @@ textarea {
     width: 100%;
     border: none;
     border-radius: 4px;
+    resize: none;
+    padding: 0;
+    margin-top: 20px;
 }
 
-textarea#textbox {
+textarea:focus {
+    border-color: rgb(109, 33, 230);
+}
+
+.textarea {
     padding: 0;
+}
+
+textarea::placeholder {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px; 
 }
 
 button {
@@ -162,23 +195,27 @@ footer {
         margin: 2px auto 0;
     }
 
-    div.desktop-contact {
+    .contact-info {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .contact-label {
-        width: 30%;
+        width: 35%;
         padding-top: 25px;
     }
 
     .contact-input {
-        width: 70%;
+        width: 65%;
+    }
+
+    .zip-label {
+        width: 35%;
     }
 
     .contact-zip {
-        width: 25%;
-        margin-right: 45%;
+        width: 17%;
+        margin-right: 48%;
     }
 }
